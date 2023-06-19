@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #66c3f1;
+}
+
+.background{
+    position: relative;
+    width: 90%;
+    height: 600px;
+    background: #b9d2df;
+    border-radius: 20px;
+    box-shadow: -10px -10px 15px rgba(255, 255,255),
+    8px 8px 25px rgba(0,0,0,0.5);
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sun{
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    right: 40px;
+    width: 100px;
+    height:100px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #ffff5b,
+    0 0 60px #ffff5b,
+    0 0 80px #ffff5b,
+    0 0 100px #ffff5b;
+}
+
+.road{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    bottom: 100px;
+    height: 140px;
+    left: 0;
+    background: #333;
+}
+
+.road::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: #0d9e0d;
+}
+
+.road::after{
+    content:"";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg,
+    transparent 0,transparent 50%,#fff 50%,
+    #fff 100%);
+    background-size: 40px;
+    animation: animateroad 1s linear infinite;
+}
+
+@keyframes animateroad{
+    0%{
+        background-position-x:0 ;
+    }
+    100%{
+        background-position-x:-60px ;
+    }
+}
+
+/* boy */
+.boy{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    width: calc(1536px/6);
+    height: 256px;
+    z-index: 5;
+    background: url(spritestrip1.png);
+    animation: animateboy 1s steps(6) infinite;
+}
+
+@keyframes animateboy{
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: -1536px;
+    }
+}
+
+/* blue cartoon  */
+.blue-cartoon{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:calc(710px/6);
+    height: calc(355px/3);
+    z-index: 5;
+    background: url(blue_cartoon.png);
+    animation: animateblueX 1s steps(6) infinite,
+               animateblueY 2s steps(3) infinite;
+}
+
+@keyframes animateblueX{
+    from{
+        background-position-x: 0;
+    }
+    to{
+       background-position-x: -710px;
+    }
+}
+
+@keyframes animateblueY{
+    from{
+        background-position-y: 0;
+    }
+    to{
+        background-position-y:-355px;
+    }
+}
+
+/*  */
+
+.girl{
+    position: absolute;
+    top:55%;
+    left:45%;
+    transform: translate(-50%,-50%);
+    width: calc(2300px/8);
+    height: 260px;
+    z-index: 5;
+    background:url(girlrun.png);
+    animation: animategirl 1.5s steps(8) infinite;
+}
+
+@keyframes animategirl{
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: -2300px;
+    }
+}
+
+/* dog */
+.dog{
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: calc(1745px/4);
+    height: calc(660px/3);
+    z-index: 5;
+    background: url(dog.png);
+    /* background-color: #0d9e0d; */
+    animation: animatedogX 1s steps(4) infinite,
+               animatedogY 2.7s steps(3) infinite;
+}
+
+@keyframes animatedogX{
+    from{
+        background-position-x: 0;
+    }
+    to{
+        background-position-x: -1745px;
+    }
+}
+
+@keyframes animatedogY{
+    from{
+        background-position-y: 0;
+    }
+    to{
+        background-position-y: -650px;
+    }
+}
+
+/* tree */
+.tree{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 263px;
+    height: 353px;
+    z-index: 4;
+    background: url(trees.png);
+    animation: animatetree 10s linear infinite;
+    animation-delay: calc(-3s*var(--i));
+}
+
+@keyframes animatetree{
+    0%{
+        transform: translate(1400px);
+    }
+    100%{
+        transform: translate(-1400px);
+    }
+}
+/* van */
+
+.fa-shuttle-van , .fa-horse{
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    font-size: 6em;
+    height: 50px;
+    left: 30px;
+    bottom: 240px;
+    color: #eaeef0;
+    -webkit-text-stroke: 2px rgb(201,7,7);
+    animation: animatevan .2s linear infinite;
+}
+
+
+
+@keyframes animatevan{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform:translateY(1.5px);
+    }
+}
+
+/* trees */
+
+.fa-tree{
+    position: absolute;
+    left: 20px;
+    bottom: 237px;
+    font-size: 7em;
+    color: #0d9e0d;
+    z-index: 3;
+    animation: animateclouds 10s linear infinite;
+    animation-delay:calc(-3s*var(--i)) ;
+}
+
+/* cloud */
+
+.fa-cloud{
+    position: absolute;
+    top: calc(5px *var(--i));
+    left: calc(200px *var(--i));
+    font-size: 7em;
+    -webkit-text-stroke: 1px rgb(109, 224, 228);
+    z-index: 3;
+    color: rgb(243, 249, 250);
+    animation: animateclouds 10s linear infinite;
+    animation-delay:calc(-3s*var(--i)) ;
+}
+
+/* mountains */
+.fa-mountain{
+    position: absolute;
+    z-index: 2;
+    bottom: 160px;
+    font-size: 25em;
+    color: rgb(78, 82, 85);
+    animation: animateclouds 15s linear infinite;
+    animation-delay:calc(-7s*var(--i)) ;
+}
+
+@keyframes animateclouds{
+    0%{
+        transform: translate(1400px);
+    }
+    100%{
+        transform: translate(-1400px);
+    }
+}

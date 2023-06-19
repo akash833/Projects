@@ -1,0 +1,76 @@
+body{
+    margin: 0%;
+}
+
+.app_cointainer{
+    padding: 3px;
+    height: 3rem;
+    background-color: rgb(158, 172, 172);
+    display: flex;
+    align-items: center;
+}
+.app_cointainer span:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.app_cointainer>* {
+    margin-right: 1rem;
+}
+.material-icons{
+    font-size: 1.75rem;
+}
+.img-list-cointainer{
+    height: 7rem;
+    background-color: rgb(136, 145, 153);
+    display: flex;
+    align-items: center;
+}
+.img-list-cointainer>*{
+    width: 10rem;
+    height: 80%;
+    margin: 10px;
+    border-radius:12px;
+}
+.img-list-cointainer :hover{
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.02);
+    cursor:pointer;
+}
+.img-preview-cointainer{
+    height: calc( 100vh - 10rem);
+    background-color: rgb(111, 120, 128);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.final_image{
+    width: 80%;
+    object-fit: contain;
+    max-height: 80%;
+}
+
+.img-preview-cointainer>.material-icons{
+    font-size: 2rem;
+}
+
+#left,#right{
+    font-size: 50px;
+}
+#right:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+#left:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.image-show-on img{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.image-show-on {
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+.App{
+  border: 2px solid black;
+}
+
+.add-task{
+  display: flex;
+  border: 2px solid red;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btn-add-task{
+  height: 40px;
+  border-radius: 5px;
+}
+
+.to-do-block{
+  display: flex;
+  height: 80%;
+}
+
+
+
+.to-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 630px;
+  border: 2px solid blue;
+  padding: 10px;
+}
+
+.keys{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+  background-color: aquamarine;
+}
+
+/* .to-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+  border: 1px solid grey;
+  background-color: aquamarine;
+} */
+
+.do-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 630px;
+  border: 2px solid blue;
+  padding: 10px;
+}
+

@@ -1,0 +1,343 @@
+body{
+    margin: 0%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.my-button{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    background: url("./background_images/navbar_backbround.png");
+    background-size: cover;
+    background-color: rgb(206, 133, 38);
+}
+
+.search *{
+    font-size: 20px;
+}
+.navbar span {
+    border-right: 3.5px solid rgb(12, 104, 146);
+    border-left: 3.5px solid rgb(204, 73, 13);
+    border-top: 3.5px solid rgb(85, 146, 15);
+    border-bottom: 3.5px solid rgb(214, 3, 133);
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.logo{
+    margin-left: 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+.app-name{
+    font-size: 40px;
+}
+
+.my-name{
+    font-size: small;
+    margin-left: 110px;
+}
+
+.navbar span:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.image-container{
+    background: url("./background_images/image_back0.jpg") no-repeat;
+    background-size: cover;
+    max-width:1535px;
+    max-height: 86.5vh;
+    display: flex;
+}
+
+.select-folder{
+    /* margin: 5px; */
+    margin-top: 1vh;
+    margin-left: 2.3vw;
+    margin-bottom: 0%;
+    width: 17vw;
+    /* background-color: rgba(255,255,255,0.8); */
+}
+
+.all-slide{
+    width: 17vw;
+    height: 78vh;
+    margin: 2vh;
+    margin-top: 1vh;
+    border-radius: 20px;
+    border: 1px solid  rgba(255,255,255,0.8);
+    padding: 10px;
+    background-color:  rgba(255,255,255,0.8);
+}
+
+.overlay1{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 17vw;
+    height: 78vh;
+    /* margin: 15px; */
+    border-radius: 20px;
+    top: 20vh;
+    left: 14px;
+    opacity: 0.5;
+}
+
+.show-image{
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.8);
+    width: 78.6vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.overlay2{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 77vw;
+    height: 82vh;
+    margin-bottom: 2vh;
+    border-radius: 20px;
+    top: 15.3vh;
+    left: 22vw;
+    opacity: 0.5;
+}
+.overlay3{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    width: 77vw;
+    height: 82vh;
+    margin-bottom: 2vh;
+    border-radius: 20px;
+    top: 15.3vh;
+    left: 22vw;
+    opacity: 0.5;
+}
+
+.text1{
+    position: absolute;
+    font-size: 7vh;
+    font-family: 'Dancing Script', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text2{
+    position: absolute;
+    font-size: 5vh;
+    font-family: 'Dancing Script', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#image-folder{
+    padding: 5px;
+    width: 14vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.new-slide{ 
+    font-weight: 1000;
+    font-style:italic;
+    width: 100%;
+    margin: 5px;
+    border: 1px solid rgb(7, 220, 228);
+    border-radius: 9px;
+    padding: 10px;
+    background-color: rgb(206, 101, 16);
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.new-slide:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+/* slides */
+.my-slide{
+    height: calc(92vh - 255px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.my-slide::-webkit-scrollbar {
+    border-radius: 2px;
+    background-color: rgb(240, 223, 223);
+    width: 10px;
+    height: 80%;
+}
+.my-slide::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(99, 97, 88);
+}
+
+#slide{
+    width: 100%;
+    height: 120px;
+    margin: 5px;
+    border: 1px solid rgb(7, 220, 228);
+    border-radius: 9px;
+    padding: 5px;
+    background-color: rgb(111, 191, 223);
+}
+
+#slide:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+#slide .title{
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#slide #details-image{
+    width: 100%;
+    height: 74%;
+    display: flex;
+}
+
+#details-image .details{
+    margin: 3px;
+    line-height: 12px;
+    font-size: 10px;
+    border-radius: 5px;
+    width: 48%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#details-image img{
+    border-radius:7px;
+    width: 49%;
+    height: 94%;
+}
+
+/* view imgaes box */
+#view-image{
+    display: none;
+}
+#view-slide{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    border: 3px solid rgb(49, 31, 209);
+    border-radius: 9px;
+    padding: 5px;
+}
+
+
+#view-slide .view-title{
+    border-bottom: 3px solid rgb(27, 30, 196);
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#view-slide #view-details-image{
+    margin-top: 20px;
+    width: 100%;
+    height: 74%;
+    display: flex;
+}
+
+#view-details-image .view-details{
+    margin: 3px;
+    border-radius: 5px;
+    width: 48%;
+}
+
+#view-details-image img{
+    line-height: 100%;
+    vertical-align: middle;
+    border-radius:7px;
+    width: 49%;
+    height: 94%;
+}
+
+/* creating new slide page */
+#create-slide-page{
+    margin-top: 5vh;
+    display: none;
+}
+
+#create-slide{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+#create-slide *{
+    padding:5px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-color: blueviolet;
+    background-color: rgb(157, 247, 247);
+}
+#top{
+    border-radius: 30px 30px 0px 0px;
+}
+#bottom{
+    border-radius: 0px 0px 30px 30px;
+}
+#new-image-url{
+    margin-top: 3vh;
+}
+#create-slide input{
+    width: 50vw;
+    height: 7vh;
+}
+#create-slide textarea{
+    width: 50vw;
+    height: 40vh;
+    margin-bottom: 3vh;
+}
+
+.save-file{
+    margin-left: 45%;
+}
+#left-search{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    #menu{
+        display: block;
+    }
+    .my-button{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    .search{
+        display: none;
+    }
+    #left-search{
+        display: block;
+        float: left;
+    }
+}

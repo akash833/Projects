@@ -1,0 +1,78 @@
+.t{
+    display: block;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #5563fa;
+    color: white;
+    background-color: rgb(149, 173, 234);
+    position: fixed;
+    top:15px;
+    right: 12vw;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.9;
+}
+
+.t-m{
+    display: none;
+}
+
+.t-icon{
+    font-size: 11px;
+    font-weight: 500;
+    margin: 8px;
+}
+
+.t-button{
+    margin: 2px;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+    background-color: #5563fa;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px){
+    .t{
+        display: none;
+    }
+    .t-m{
+        display: flex;
+        width: 50px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid #5563fa;
+        color: white;
+        background-color: rgb(149, 173, 234);
+        position: fixed;
+        top:12vh;
+        right:5vw;
+        z-index: 900;
+        opacity: 0.9;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .t-m-button{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0.5px;
+        width: 32px;
+        height: 17px;
+        border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+        background-color: #5563fa;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .t-m-icon{
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

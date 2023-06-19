@@ -1,0 +1,114 @@
+/* blackjack */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container-4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin:2px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: url(./img/game_background.png);
+    background-size: cover;
+}
+
+#heading{
+    display: flex;
+    flex-direction: column;
+    color: #946634;
+}
+
+.your-heading,.dealer-heading{
+    font-size: 2.5em;
+}
+
+.flex-box-row-1{
+    position: absolute;
+    top: 9.2vh;
+    left: 27vw;
+    width: 53vw;
+    height: 10vh;
+    display: flex;
+    color: #946634;
+}
+.flex-box-row-2{
+    position: absolute;
+    top: 20vh;
+    left: 38vh;
+    width: 65vw;
+    height: 60vh;
+    display: flex;
+}
+
+.flex-box-row-3{
+    position: absolute;
+    top: 85vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+.flex-box-row-4{
+    position: absolute;
+    top: 10vh;
+    right: 2vw;
+    color: #946634;
+}
+
+#your-box{
+    width: 50%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+}
+
+#boat-box
+{
+    width: 50%;
+    height:auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.your-card,.dealer-card{
+    width: 50%;
+    height:350px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+#play{
+    font-size: 1.9em;
+    color: #946634;
+}
+
+.button-border{
+    padding: 5px;
+}
+
+.btn1,.btn2,.btn3{
+    width: 6vw;
+    height: 6vh;
+    border: 1px solid rgb(219, 144, 14);
+    background-color: #946634;
+    border-radius: 5px;
+    margin: 1vw;
+    color: #3a2400;
+    font-size: 1.4em;
+}
+
+table,table th,table td{
+    border: 2px solid #946634;
+}
+
+th{
+    margin: 10px;
+}
+
+.my-table{
+    width: 12vw;
+    height: 10vh;
+}

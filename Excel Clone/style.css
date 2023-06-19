@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.title-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    background-color: #107c41;
+    color: #fff;
+}
+
+
+.menu-bar{
+    display: flex;
+    background-color: #107c41;
+    color: #fff;
+    height: 5vh;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-item.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+
+.menu-item:hover{
+    background-color: #0b6232;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+.menu-icon-bar{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background-color: rgb(229, 226, 226);
+}
+
+.menu-icon-bar span{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.menu-icon-bar span:hover{
+    background-color: lightgray;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.font-family-selector{
+    border: 1px solid black;
+    height: 25px;
+    font-size: 15px;
+    width: 150px;
+}
+
+.font-size-selector{
+    border: 1px solid black;
+    height: 25px;
+    font-size: 15px;
+}
+
+.formulae-bar{
+    height: 5vh;
+    background-color: rgb(229, 226, 226);
+    display: flex;
+    align-items: center;
+}
+
+.data-container{
+    height: 77vh;
+}
+
+.sheet-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.scroller{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icon-left, .icon-right, .add-circle{
+    color:#107c41;
+}
+
+.sheet-container{
+    display: flex;
+}
+
+.sheet{
+    border-bottom: 4px solid #107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    border: 1px solid lightgrey;
+    width: calc(100vw - 110px);
+}
+
+.add-circle{
+    margin-right: 10px;
+}
+
+.data-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-all{
+    width: 24px;
+    height: 25px;
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+}
+
+.column-name-container{
+    display: flex;
+    height: 25px;
+    width: calc(100vw - 25px);
+    border: 1px solid lightgrey;
+    overflow: hidden;
+}
+
+.column-name{
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid lightgrey;
+    font-weight: bold;
+}
+
+.row-name-container{
+    overflow: hidden;
+    width: 25px;
+    height: calc(74.3vh);
+    border: 1px solid lightgrey;
+}
+
+.row-name{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-bottom: 1px solid lightgrey;
+}
+
+.input-cell-container{
+    max-width: calc(100vw - 25px);
+    max-height: calc(74.4vh);
+    display: flex;
+    border: 1px solid lightgray;
+    overflow: scroll;
+}
+
+.input-cell{
+    height: 25px;
+    width: 100px;
+    border-right:1px solid lightgrey ;
+    border-bottom:1px solid lightgrey ;
+}
+
+.input-cell.selected-cell{
+    border: 2px solid #107c41;
+}
+
+.formulae-editor{
+    height: 70%;
+    width: 7vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+
+.formulae-input{
+    height: 70%;
+    width: 90vw;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.selected{
+    background-color: grey;
+    height: 100%;
+}

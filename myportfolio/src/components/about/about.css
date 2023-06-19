@@ -1,0 +1,145 @@
+.a{
+    width: 99.2vw;
+    height: 100vh;
+}
+
+.a-title{
+    position: relative;
+    top: 8vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color:#5563fa;
+}
+
+.a-m-left-br{
+   display: none;
+}
+
+.a-m-left{
+    display: none;
+}
+
+.a-bg{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -2vh;
+    background-color:#5563fa;
+    clip-path: polygon(0 22%, 100% 10%, 100% 70%, 0 87%);
+}
+
+.a-left{
+    flex:1;
+    top: 28vh;
+    left: 5vw;
+    width: 300px;
+    height: 300px;
+    clip-path: circle(50% at 50% 50%);
+    background: url(../../img/my_pick.jpg) no-repeat;
+    position: absolute;
+}
+
+.a-left-br{
+    position: absolute;
+    top: 27.2vh;
+    left: 4.7vw;
+    width: 310px;
+    height: 310px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+}
+.mypick{
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+}
+
+.a-right{
+    flex:2;
+}
+
+
+.a-desc{
+    color: white;
+    margin-left: 40vw;
+    margin-top:25vh;
+    margin-right: 10vw;
+    font-size: 20px;
+}
+
+.bottom_to_top{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    background-color: rgb(149, 173, 234);
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    transition: .4s all ease;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.bottom_to_top.active{
+    display: flex;
+}
+
+@media  screen and (max-width:480px) {
+    .a{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-left{
+        display: none;
+    }
+    .a-left-br{
+        display:none;
+    }
+
+    .a-m-left{
+        display: block;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        clip-path: circle(50% at 50% 50%);
+        background: url(../../img/my_pick2.jpg) no-repeat;
+    }
+
+    .a-m-left-br{
+        display: block;
+        position: relative;
+        top: 13vh;
+        left: 25vw;
+        width: 220px;
+        height: 220px;
+        clip-path: circle(50% at 50% 50%);
+        background-color:rgb(149, 173, 234);
+    }
+
+     
+    .a-bg{
+        margin-top:2vh;
+    }
+    .a-desc{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 13px;
+    }
+
+
+    
+}

@@ -1,0 +1,111 @@
+.s{
+    height: 100vh;
+}
+
+
+.s-skill{
+    top: 8vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    color:#5563fa;
+}
+
+.s-bg{
+    position: relative;
+    top: 10vh;
+    background-color: #5563fa;
+    clip-path: polygon(49% 0%, 54% 20%, 100% 20%, 100% 100%, 54% 100%, 49% 80%, 0 80%, 0 0%);
+}
+.s-all{
+    position: relative;
+    display: flex;
+}
+
+.s-all-left{
+    color: white;
+    font-size: 1.2em;
+    margin: 10vh 15vh;
+    flex: 1;
+}
+
+.s-all-right{
+    margin-top: 15.5vh;
+    flex: 1;
+}
+
+.s-j,.s-ps,.s-r,.s-c,.s-js,.s-h,.s-ms{
+    border-radius: 5px;
+    width: 30vw;
+    height: 3vh;
+    margin:1em ;
+    margin-top: 0px;
+    background-color: rgb(149, 173, 234);
+}
+
+.s-j div,.s-ps div,.s-r div,.s-c div,.s-js div,.s-h div,.s-ms div{
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 10px;
+    border-radius: 2px;
+    width: 20vw;
+    height: 1vh;
+    background-color: white;
+}
+
+.s-title{
+    color: white;
+    font-size: 15px;
+    width: 28vw;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* for 90% ---> w(26.1vw) and for 95% ---> w(27.6vw) */
+.s-j div{width: 27.6vw;}.s-ps div{width: 26.1vw;}.s-r div{width: 27.6vw;}.s-c div{width: 27.6vw;}.s-js div{width: 26.1vw;}.s-h div{width: 27.6vw;}.s-ms div{width: 26.1vw;}
+
+
+@media screen and (max-width:480px){
+    .s-all-left{
+        display: none;
+    }
+
+    .s-bg{
+        height: 85%;
+        clip-path: polygon(49% 0%, 54% 5%, 100% 5%, 100% 95%, 54% 95%, 49% 90%, 0 90%, 0 0%);  
+    }
+    .s-all-right{
+        margin-top: 30px;
+    }
+    
+    .s-j,.s-ps,.s-r,.s-c,.s-js,.s-h,.s-ms{
+        border-radius: 5px;
+        width: 90vw;
+        height: 3vh;
+        margin:0.5em ;
+        background-color: rgb(149, 173, 234);
+    }
+    
+    .s-j div,.s-ps div,.s-r div,.s-c div,.s-js div,.s-h div,.s-ms div{
+        position: absolute;
+        margin-top: 1vh;
+        margin-left: 10px;
+        border-radius: 2px;
+        width: 90vw;
+        height: 1vh;
+        background-color: white;
+    }
+    
+    .s-title{
+        color: white;
+        font-size: 15px;
+        width: 80vw;
+        margin-left: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .s-j div{width: 77.6vw;}.s-ps div{width: 76.1vw;}.s-r div{width: 77.6vw;}.s-c div{width: 77.6vw;}.s-js div{width: 76.1vw;}.s-h div{width: 77.6vw;}.s-ms div{width: 76.1vw;}
+}
